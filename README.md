@@ -86,13 +86,16 @@ AIRAS is a sophisticated AI-powered resume analysis tool that helps job seekers 
 
 ```
 AIRAS/
-├── app.py                 # Main Streamlit application
-├── resume_analyzer.py     # Core analysis engine
-├── requirements.txt       # Project dependencies
-├── .env                  # Environment variables (create this)
-├── .gitignore           # Git ignore rules
-├── README.md            # Project documentation
-└── assets/             # Project assets (if any)
+├── code/                # Source code directory
+│   ├── app.py          # Main Streamlit application
+│   └── resume_analyzer.py  # Core analysis engine
+├── assets/             # Project assets and resources
+├── airas/              # Virtual environment directory
+├── requirements.txt    # Project dependencies
+├── .env               # Environment variables (create this)
+├── .gitignore        # Git ignore rules
+├── LICENSE           # MIT License
+└── README.md        # Project documentation
 ```
 
 ## 🎯 Supported Job Roles
@@ -125,7 +128,7 @@ AIRAS/
 
 1. **Start the Application**
    ```bash
-   streamlit run app.py
+   streamlit run code/app.py
    ```
 
 2. **Access the Web Interface**
