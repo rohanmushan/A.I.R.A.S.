@@ -121,15 +121,6 @@ AIRAS/
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🤝 Contributing
-
-Contributions are welcome! Please check our [Contributing Guidelines](CONTRIBUTING.md) for details.
-
-## 📧 Contact
-
-- **Developer**: Rohan Mushan
-- **GitHub**: [rohanmushan](https://github.com/rohanmushan)
-- **Project**: [AIRAS Repository](https://github.com/rohanmushan/AIRAS-AI-based-Resume-Analysis-System)
 
 ---
 
