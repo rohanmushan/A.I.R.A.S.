@@ -4,14 +4,28 @@
 ![Streamlit](https://img.shields.io/badge/Streamlit-1.31%2B-red)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
-AIRAS is a sophisticated AI-powered resume analysis tool that helps job seekers optimize their resumes for Applicant Tracking Systems (ATS). Leveraging Google's Gemini 1.5 Flash AI model, it provides comprehensive analysis and actionable feedback to improve resume effectiveness.
+AIRAS is a sophisticated AI-powered resume analysis tool that leverages Google's Gemini 1.5 Flash AI model to help job seekers optimize their resumes for Applicant Tracking Systems (ATS). It provides comprehensive analysis and actionable feedback to improve resume effectiveness.
 
-## 🌟 Key Features
+## 📸 Demo & Screenshots
 
-- **Smart Resume Parsing**
-  - Supports PDF and DOCX formats
-  - Intelligent text extraction and processing
-  - Maintains formatting integrity
+### Video Demo
+[Watch the Demo Video](link-to-your-demo-video)
+
+### Screenshots
+<details>
+<summary>Click to expand</summary>
+
+#### Main Interface
+![Main Interface](assets/images/main-interface.png)
+
+#### Analysis Results
+![Analysis Results](assets/images/analysis-results.png)
+
+#### Skills Assessment
+![Skills Assessment](assets/images/skills-assessment.png)
+</details>
+
+## ✨ Key Features
 
 - **AI-Powered Analysis**
   - ATS compatibility scoring
@@ -19,168 +33,104 @@ AIRAS is a sophisticated AI-powered resume analysis tool that helps job seekers 
   - Formatting and structure evaluation
   - Experience relevance assessment
 
+- **Smart Resume Parsing**
+  - PDF and DOCX support
+  - Intelligent text extraction
+  - Format integrity preservation
+
 - **Comprehensive Feedback**
-  - Technical skills assessment
-  - Soft skills evaluation
+  - Technical & soft skills assessment
   - Content structure recommendations
-  - Formatting improvement suggestions
+  - Actionable improvement suggestions
 
-- **Multiple Job Role Support**
-  - 20+ pre-configured job profiles
-  - Customized skill requirements
-  - Industry-standard keyword matching
+## 🛠️ Tech Stack
 
-- **User-Friendly Interface**
-  - Clean, intuitive design
-  - Real-time analysis
-  - Downloadable detailed reports
-  - Interactive results visualization
-
-## 🛠️ Technology Stack
-
-- **Frontend:** Streamlit
-- **AI/ML:** Google Gemini 1.5 Flash
-- **Document Processing:** PyPDF2, python-docx
-- **Environment Management:** python-dotenv
-- **Version Control:** Git
+- Frontend: Streamlit
+- AI/ML: Google Gemini 1.5 Flash
+- Document Processing: PyPDF2, python-docx
+- Environment: python-dotenv
 
 ## 📋 Prerequisites
 
-- Python 3.8 or higher
+- Python 3.8+
 - Google AI API Key (Gemini)
-- Git (for version control)
-- pip (Python package manager)
+- Git
 
-## 🚀 Installation Guide
+## 🚀 Quick Start
 
-1. **Clone the Repository**
+1. **Clone & Setup**
    ```bash
    git clone https://github.com/rohanmushan/AIRAS-AI-based-Resume-Analysis-System.git
    cd AIRAS-AI-based-Resume-Analysis-System
+   python -m venv venv
+   source venv/bin/activate  # Linux/macOS
+   # or
+   venv\Scripts\activate     # Windows
    ```
 
-2. **Set Up Virtual Environment (Recommended)**
-   ```bash
-   # Windows
-   python -m venv venv
-   venv\Scripts\activate
-
-   # macOS/Linux
-   python -m venv venv
-   source venv/bin/activate
-   ```
-
-3. **Install Dependencies**
+2. **Install & Configure**
    ```bash
    pip install -r requirements.txt
-   ```
-
-4. **Configure Environment Variables**
-   ```bash
-   # Create .env file
    echo "GOOGLE_API_KEY=your_api_key_here" > .env
    ```
-   Replace `your_api_key_here` with your actual Google Gemini API key.
+
+3. **Run Application**
+   ```bash
+   streamlit run code/app.py
+   ```
 
 ## 📂 Project Structure
 
 ```
 AIRAS/
-├── code/                # Source code directory
-│   ├── app.py          # Main Streamlit application
-│   └── resume_analyzer.py  # Core analysis engine
-├── assets/             # Project assets and resources
-├── airas/              # Virtual environment directory
-├── requirements.txt    # Project dependencies
-├── .env               # Environment variables (create this)
-├── .gitignore        # Git ignore rules
-├── LICENSE           # MIT License
-└── README.md        # Project documentation
+├── code/                # Source code
+│   ├── app.py          # Streamlit application
+│   └── resume_analyzer.py  # Analysis engine
+├── assets/             # Media resources
+│   ├── images/         # Screenshots
+│   └── videos/         # Demo videos
+├── requirements.txt    # Dependencies
+├── .env               # Configuration
+└── README.md         # Documentation
 ```
 
-## 🎯 Supported Job Roles
+## 🎯 Supported Roles
 
-1. **Engineering & Development**
-   - Software Engineer
-   - Full Stack Developer
-   - Frontend Developer
-   - Backend Developer
-   - DevOps Engineer
-   - Mobile Developer
+### Technical
+- Software Engineer
+- Full Stack Developer
+- Data Scientist
+- ML Engineer
+- DevOps Engineer
 
-2. **Data & AI**
-   - Data Scientist
-   - Machine Learning Engineer
-   - AI Engineer
-   - Data Analyst
-   - Deep Learning Engineer
-   - MLOps Engineer
+### Management
+- Product Manager
+- Project Manager
+- Business Analyst
 
-3. **Management & Design**
-   - Product Manager
-   - Project Manager
-   - UX Designer
-   - Business Analyst
-   - Marketing Manager
-   - HR Executive
+[View all supported roles](docs/supported-roles.md)
 
-## 🚀 Usage
+## 🔒 Privacy & Security
 
-1. **Start the Application**
-   ```bash
-   streamlit run code/app.py
-   ```
-
-2. **Access the Web Interface**
-   - Open your browser
-   - Navigate to `http://localhost:8501`
-
-3. **Analyze Your Resume**
-   - Upload your resume (PDF/DOCX)
-   - Select target job role
-   - View comprehensive analysis
-   - Download detailed report
-
-## 💡 Best Practices
-
-- Keep your resume in PDF or DOCX format
-- Ensure clear section headings
-- Use standard fonts
-- Avoid complex formatting
-- Include relevant keywords
-- Quantify achievements where possible
-
-## 🔒 Security & Privacy
-
-- Resumes are processed in-memory only
-- No data is stored permanently
-- Secure API key handling
-- Environment variables for sensitive data
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+- In-memory processing only
+- No data storage
+- Secure API handling
+- Environment-based configuration
 
 ## 📝 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🙏 Acknowledgments
+## 🤝 Contributing
 
-- Google Gemini AI for powerful language processing
-- Streamlit for the amazing web framework
-- Open source community for various dependencies
+Contributions are welcome! Please check our [Contributing Guidelines](CONTRIBUTING.md) for details.
 
 ## 📧 Contact
 
-Rohan Mushan - [GitHub Profile](https://github.com/rohanmushan)
-
-Project Link: [https://github.com/rohanmushan/AIRAS-AI-based-Resume-Analysis-System](https://github.com/rohanmushan/AIRAS-AI-based-Resume-Analysis-System)
+- **Developer**: Rohan Mushan
+- **GitHub**: [rohanmushan](https://github.com/rohanmushan)
+- **Project**: [AIRAS Repository](https://github.com/rohanmushan/AIRAS-AI-based-Resume-Analysis-System)
 
 ---
 
-⭐️ Star this repository if you find it helpful! 
+⭐️ If you find this project helpful, please consider giving it a star! 
