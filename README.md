@@ -108,7 +108,6 @@ AIRAS/
 - Project Manager
 - Business Analyst
 
-[View all supported roles](docs/supported-roles.md)
 
 ## 🔒 Privacy & Security
 
